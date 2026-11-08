@@ -70,77 +70,79 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Karla", sans-serif;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
+  --radius: 0.25rem;
+  --background: oklch(0.975 0.014 50);
+  --foreground: oklch(0.33 0.04 12);
+  --card: oklch(0.99 0.008 45);
+  --card-foreground: oklch(0.33 0.04 12);
+  --popover: oklch(0.99 0.008 45);
+  --popover-foreground: oklch(0.33 0.04 12);
+  --primary: oklch(0.43 0.1 5);
+  --primary-foreground: oklch(0.985 0.008 45);
+  --secondary: oklch(0.94 0.025 35);
+  --secondary-foreground: oklch(0.43 0.1 5);
+  --muted: oklch(0.95 0.015 35);
+  --muted-foreground: oklch(0.5 0.03 15);
+  --accent: oklch(0.79 0.09 82);
+  --accent-foreground: oklch(0.33 0.04 12);
+  --destructive: oklch(0.55 0.19 25);
+  --destructive-foreground: oklch(0.985 0.008 45);
+  --border: oklch(0.88 0.035 35);
+  --input: oklch(0.88 0.035 35);
+  --ring: oklch(0.61 0.12 10);
+  --chart-1: oklch(0.61 0.12 10);
+  --chart-2: oklch(0.52 0.08 150);
+  --chart-3: oklch(0.79 0.09 82);
+  --chart-4: oklch(0.68 0.09 330);
+  --chart-5: oklch(0.5 0.03 15);
+  --sidebar: oklch(0.96 0.02 40);
+  --sidebar-foreground: oklch(0.33 0.04 12);
+  --sidebar-primary: oklch(0.43 0.1 5);
+  --sidebar-primary-foreground: oklch(0.985 0.008 45);
+  --sidebar-accent: oklch(0.94 0.025 35);
+  --sidebar-accent-foreground: oklch(0.43 0.1 5);
+  --sidebar-border: oklch(0.88 0.035 35);
+  --sidebar-ring: oklch(0.61 0.12 10);
 }
 
 .dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  --background: oklch(0.2 0.025 15);
+  --foreground: oklch(0.95 0.018 42);
+  --card: oklch(0.25 0.03 15);
+  --card-foreground: oklch(0.95 0.018 42);
+  --popover: oklch(0.25 0.03 15);
+  --popover-foreground: oklch(0.95 0.018 42);
+  --primary: oklch(0.72 0.1 10);
+  --primary-foreground: oklch(0.2 0.025 15);
+  --secondary: oklch(0.3 0.035 15);
+  --secondary-foreground: oklch(0.95 0.018 42);
+  --muted: oklch(0.3 0.035 15);
+  --muted-foreground: oklch(0.75 0.03 35);
+  --accent: oklch(0.77 0.09 82);
+  --accent-foreground: oklch(0.2 0.025 15);
+  --destructive: oklch(0.65 0.18 25);
+  --destructive-foreground: oklch(0.95 0.018 42);
+  --border: oklch(0.39 0.035 15);
+  --input: oklch(0.39 0.035 15);
+  --ring: oklch(0.72 0.1 10);
+  --chart-1: oklch(0.72 0.1 10);
+  --chart-2: oklch(0.69 0.1 150);
+  --chart-3: oklch(0.77 0.09 82);
+  --chart-4: oklch(0.7 0.1 330);
+  --chart-5: oklch(0.75 0.03 35);
+  --sidebar: oklch(0.25 0.03 15);
+  --sidebar-foreground: oklch(0.95 0.018 42);
+  --sidebar-primary: oklch(0.72 0.1 10);
+  --sidebar-primary-foreground: oklch(0.2 0.025 15);
+  --sidebar-accent: oklch(0.3 0.035 15);
+  --sidebar-accent-foreground: oklch(0.95 0.018 42);
+  --sidebar-border: oklch(0.39 0.035 15);
+  --sidebar-ring: oklch(0.72 0.1 10);
 }
 
 @layer base {
@@ -151,5 +153,433 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+}
+
+.wedding-page {
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--color-background);
+}
+
+.invitation-cover {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  min-height: min(900px, 100svh);
+  padding: clamp(1rem, 3vw, 3rem);
+  gap: clamp(1.4rem, 4vw, 4.5rem);
+  align-items: center;
+}
+
+.invitation-artwork {
+  position: relative;
+  height: min(820px, calc(100svh - 6rem));
+  min-height: 560px;
+  overflow: hidden;
+  background: var(--color-secondary);
+}
+
+.mandap-art {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 46%;
+}
+
+.artwork-caption {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem 0.75rem;
+  color: var(--color-primary);
+  background: linear-gradient(0deg, color-mix(in oklab, var(--color-background) 93%, transparent), transparent);
+  font-size: 0.68rem;
+  text-align: center;
+}
+
+.caption-rule {
+  width: 1.4rem;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+.invitation-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.4rem clamp(0.5rem, 3vw, 3rem);
+  text-align: center;
+  animation: invitation-arrive 850ms ease-out both;
+}
+
+.invitation-mark {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.6rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.couple-names {
+  max-width: 650px;
+  margin: 1rem 0 0;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: clamp(3.4rem, 6.5vw, 6.4rem);
+  font-weight: 400;
+  line-height: 0.92;
+}
+
+.ampersand {
+  display: block;
+  margin: 0.5rem 0;
+  color: var(--color-accent);
+  font-size: 0.62em;
+  font-style: italic;
+  line-height: 1;
+}
+
+.invitation-intro {
+  max-width: 360px;
+  margin: 1.4rem 0 0;
+  color: var(--color-muted-foreground);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.family-lines {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: 500px;
+  margin-top: 1.8rem;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.family-line {
+  padding: 1.1rem 0.6rem;
+}
+
+.family-line + .family-line {
+  border-left: 1px solid var(--color-border);
+}
+
+.family-role {
+  color: var(--color-muted-foreground);
+  font-size: 0.67rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.family-line p {
+  margin: 0.45rem 0 0;
+  color: var(--color-foreground);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.family-line p span {
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+.cover-date {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 1.6rem;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+
+.date-flourish {
+  color: var(--color-accent);
+  font-size: 0.8rem;
+}
+
+.discover-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+  color: var(--color-muted-foreground);
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.discover-link:hover,
+.discover-link:focus-visible,
+.map-link:hover,
+.map-link:focus-visible {
+  color: var(--color-primary);
+}
+
+.celebrations {
+  padding: clamp(3.5rem, 8vw, 7rem) clamp(1.25rem, 8vw, 8rem) 5.5rem;
+  background: var(--color-secondary);
+  text-align: center;
+}
+
+.celebrations-heading h2 {
+  margin: 0.55rem 0 0;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.celebrations-heading > p:last-child {
+  margin: 0.8rem auto 0;
+  color: var(--color-muted-foreground);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 990px;
+  margin: 3.3rem auto 0;
+  text-align: left;
+}
+
+.event-item {
+  padding: 0 3rem 0 1rem;
+}
+
+.reception-item {
+  padding: 0 1rem 0 3rem;
+  border-left: 1px solid var(--color-border);
+}
+
+.event-number {
+  color: var(--color-primary);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.event-number span {
+  padding: 0 0.25rem;
+  color: var(--color-accent);
+}
+
+.event-item h3 {
+  margin: 0.65rem 0 0;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 2.55rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.event-date {
+  margin: 1.15rem 0 0;
+  color: var(--color-foreground);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.event-time,
+.venue-address {
+  margin: 0.35rem 0 0;
+  color: var(--color-muted-foreground);
+  font-size: 0.85rem;
+}
+
+.venue-rule {
+  width: 2.5rem;
+  height: 1px;
+  margin: 1.35rem 0 1rem;
+  background: var(--color-accent);
+}
+
+.venue-name {
+  margin: 0;
+  color: var(--color-foreground);
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  margin-top: 1.2rem;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.map-link svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.map-link svg:last-child {
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+.invitation-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem 3rem;
+  text-align: center;
+}
+
+.footer-ornament {
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: 2rem;
+}
+
+.invitation-footer p {
+  margin: 0.25rem 0 0;
+  color: var(--color-muted-foreground);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
+.footer-names {
+  margin-top: 0.55rem;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+
+@keyframes invitation-arrive {
+  from { opacity: 0; transform: translateY(0.7rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 760px) {
+  .invitation-cover {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 0;
+    gap: 0;
+  }
+
+  .invitation-artwork {
+    height: min(43svh, 360px);
+    min-height: 260px;
+  }
+
+  .mandap-art {
+    object-position: center 38%;
+  }
+
+  .artwork-caption {
+    font-size: 0.62rem;
+  }
+
+  .invitation-copy {
+    padding: 2.2rem 1.25rem 3rem;
+  }
+
+  .invitation-mark {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .couple-names {
+    font-size: clamp(3rem, 13vw, 4.2rem);
+  }
+
+  .invitation-intro {
+    margin-top: 1.1rem;
+    font-size: 0.9rem;
+  }
+
+  .family-lines {
+    margin-top: 1.4rem;
+  }
+
+  .family-line {
+    padding: 0.9rem 0.35rem;
+  }
+
+  .family-line p {
+    font-size: 1.1rem;
+  }
+
+  .cover-date {
+    margin-top: 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  .discover-link {
+    margin-top: 0.9rem;
+  }
+
+  .celebrations {
+    padding: 3.5rem 1.35rem 3.75rem;
+  }
+
+  .celebrations-heading h2 {
+    font-size: 2.8rem;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  .event-item,
+  .reception-item {
+    padding: 0 0 1.8rem;
+    border-left: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .reception-item {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .event-item h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

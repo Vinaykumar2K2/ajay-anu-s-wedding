@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Architecture
+- Keep this invitation on the existing `/` route and centralize its visual tokens and styling in `src/styles.css` for a simple, cohesive page.
