@@ -5,16 +5,16 @@ import weddingArt from "@/assets/wedding-invitation-art.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ajay Kumar & Anu Priya — Wedding Invitation" },
+      { title: "Ajay Kumar & AnuPriya — Wedding Invitation" },
       {
         name: "description",
         content:
-          "With the blessings of their families, Ajay Kumar and Anu Priya invite you to celebrate their wedding and reception in November 2026.",
+          "With the blessings of their families, Ajay Kumar and AnuPriya invite you to celebrate their wedding and reception in November 2026.",
       },
-      { property: "og:title", content: "Ajay Kumar & Anu Priya — Wedding Invitation" },
+      { property: "og:title", content: "Ajay Kumar & AnuPriya — Wedding Invitation" },
       {
         property: "og:description",
-        content: "Celebrate the wedding of Ajay Kumar and Anu Priya on 15 November 2026.",
+        content: "Celebrate the wedding of Ajay Kumar and AnuPriya on 15 November 2026.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -49,7 +49,7 @@ export function Index() {
           </div>
           <p className="eyebrow">Together with our families</p>
           <h1 id="couple-names" className="couple-names">
-            Ajay Kumar <span className="ampersand">&amp;</span> Anu Priya
+            Ajay Kumar <span className="ampersand">&amp;</span> AnuPriya
           </h1>
           <p className="invitation-intro">
             With joyful hearts, we invite you to share in the beginning of our
