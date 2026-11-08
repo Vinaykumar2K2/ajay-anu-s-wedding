@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-function Index() {
+export function Index() {
   return (
     <main className="wedding-page">
       <section className="invitation-cover" aria-labelledby="couple-names">
