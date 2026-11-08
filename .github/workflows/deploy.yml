@@ -30,7 +30,7 @@ jobs:
       - name: Build static site
         run: npm run build
         env:
-          NITRO_PRESET: github_pages
+          NITRO_PRESET: github-pages
       - name: Prepare Pages artifact
         run: |
           test -f .output/public/index.html
