@@ -9,11 +9,9 @@ export default defineConfig({
   },
   tanstackStart: {
     server: { entry: "server" },
-    // This invitation is a static site; prerender it at build time.
-    prerender: {
+    // This invitation is a client-rendered static site; emit a shell for static hosting.
+    spa: {
       enabled: true,
-      crawlLinks: true,
-      failOnError: true,
     },
   },
 });
